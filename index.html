@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
+    <title>Рандомное изображение</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="inner">
+
+                <form  class="inner__form" id="form">
+                    <div>
+                        <input class="inner__input " type="text" name="width" id="width" placeholder="Ширина">
+                        <p class="active__text hidden" id="width_error">*Слишком большое значение. Максимальное значение = 5000</p>
+                        <p class="active__text hidden" id="width_type">*Пожалуйста, введите число</p>
+                    </div>
+                    <div class="input__claster" id="input__claster">
+                        <input class="inner__input" type="text" name="height" 
+                        id="height" placeholder="Высота">
+                        <p class="active__text hidden" id="height_error">*Слишком большое значение. Максимальное значение = 5000</p>
+                        <p class="active__text hidden" id="height_type">*Пожалуйста, введите число</p>
+                    </div>
+                    <div>
+                        <input class="checkBox" type="checkbox" id="grayscale" name="grayscale">
+                        <label for="grayscale">Grayscale</label>
+                    </div>
+                    <div>
+                        <input class="checkBox" type="checkbox" id="blur" name="blur">
+                        <label for="blur">Blur</label>
+                    </div>
+                    <button class="inner__btn" type="submit">
+                        Вызвать рандомную картинку
+                    </button>
+                </div>
+                
+                <!-- <img class="hidden__img" id="img" src="https://unsplash.it/600/400"> -->
+                
+
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="apply.js">
+
+</script>
+</html>
